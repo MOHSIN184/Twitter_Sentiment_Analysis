@@ -1,0 +1,6 @@
+text,cleaned_text,predicted_label,predicted_sentiment,decision_threshold,negative_probability,positive_probability
+I love this product!,I love this product!,1,positive,0.47,0.060930779285818915,0.9390692207141811
+This is terrible,This is terrible,0,negative,0.47,0.9710906926105682,0.028909307389431746
+The service was okay but delivery was late,The service was okay but delivery was late,0,negative,0.47,0.6766347736824954,0.32336522631750464
+"Amazing experience, very happy","Amazing experience, very happy",1,positive,0.47,0.013018526292561838,0.9869814737074382
+Worst app ever,Worst app ever,0,negative,0.47,0.9188024799408046,0.08119752005919544
