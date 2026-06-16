@@ -1,0 +1,19 @@
+{
+  "selected_by": "validation_macro_f1",
+  "best_model_path": "models\\baseline\\best_model.joblib",
+  "training_data": "train_only",
+  "best_config": {
+    "experiment_name": "logistic_regression__real_word_char_hybrid",
+    "model_name": "logistic_regression",
+    "tfidf_variant": "real_word_char_hybrid"
+  },
+  "validation_metrics": {
+    "accuracy": 0.7991467773550098,
+    "macro_precision": 0.7945554561093922,
+    "macro_recall": 0.7978686477111611,
+    "macro_f1": 0.795826526645905,
+    "weighted_f1": 0.7997081578998584,
+    "negative_f1": 0.7697898770979252,
+    "positive_f1": 0.8218631761938848
+  }
+}
