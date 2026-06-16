@@ -1,0 +1,10 @@
+{
+  "threshold": 0.47,
+  "selected_metric": "macro_f1",
+  "selected_metric_value": 0.797696778532881,
+  "accuracy": 0.8021445866482186,
+  "macro_f1": 0.797696778532881,
+  "weighted_f1": 0.8021687971122989,
+  "false_positives": 1709,
+  "false_negatives": 1723
+}

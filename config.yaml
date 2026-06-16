@@ -1,0 +1,159 @@
+project:
+  name: twitter-sentiment-processing
+  random_state: 42
+
+paths:
+  raw_data: data/raw/twitter_sentiment_dataset.csv
+  interim_dir: data/interim
+  processed_dir: data/processed
+  reports_dir: data/reports
+  models_dir: models
+  figures_dir: outputs/figures
+  logs_dir: outputs/logs
+
+data:
+  text_column: text
+  label_column: sentiment
+  allowed_labels: [0, 1]
+
+cleaning:
+  decode_html_entities: true
+  normalize_whitespace: true
+  replace_urls: true
+  replace_mentions: true
+  keep_hashtag_words: true
+  remove_exact_duplicates: true
+  remove_conflicting_duplicate_texts: true
+
+split:
+  train_size: 0.8
+  validation_size: 0.1
+  test_size: 0.1
+  stratify: true
+
+model:
+  baseline:
+    name: tfidf_logistic_regression
+    model_path: models/baseline/tfidf_logistic_regression.joblib
+    metrics_path: models/baseline/metrics.json
+    validation_predictions_path: data/reports/validation_predictions.csv
+    test_predictions_path: data/reports/test_predictions.csv
+
+  tfidf:
+    max_features: 50000
+    ngram_range: [1, 2]
+    min_df: 2
+    max_df: 0.95
+    lowercase: true
+    strip_accents: unicode
+
+  logistic_regression:
+    max_iter: 1000
+    class_weight: balanced
+    solver: liblinear
+
+experiments:
+  output_dir: data/reports/experiments
+  best_model_path: models/baseline/best_model.joblib
+  comparison_report_path: data/reports/experiments/model_comparison.csv
+  best_model_metrics_path: data/reports/experiments/best_model_metrics.json
+  error_analysis_path: data/reports/error_analysis.csv
+  top_errors_path: data/reports/top_misclassified_examples.csv
+  threshold_tuning_path: data/reports/experiments/threshold_tuning.csv
+  threshold_metrics_path: data/reports/experiments/threshold_tuning_metrics.json
+  threshold_path: models/baseline/decision_threshold.json
+
+  models:
+    logistic_regression:
+      enabled: true
+      class_weight: balanced
+      max_iter: 1000
+      solver: liblinear
+
+    linear_svc:
+      enabled: true
+      class_weight: balanced
+      max_iter: 5000
+
+    sgd_classifier:
+      enabled: true
+      loss: log_loss
+      penalty: l2
+      alpha: 0.0001
+      class_weight: balanced
+      max_iter: 1000
+      random_state: 42
+
+    complement_nb:
+      enabled: true
+      alpha: 1.0
+
+  tfidf_variants:
+    basic_unigram:
+      feature_type: word
+      max_features: 30000
+      ngram_range: [1, 1]
+      min_df: 2
+      max_df: 0.95
+      lowercase: true
+      strip_accents: unicode
+
+    unigram_bigram:
+      feature_type: word
+      max_features: 50000
+      ngram_range: [1, 2]
+      min_df: 2
+      max_df: 0.95
+      lowercase: true
+      strip_accents: unicode
+
+    real_word_char_hybrid:
+      feature_type: word_char_hybrid
+
+      word:
+        max_features: 50000
+        ngram_range: [1, 2]
+        min_df: 2
+        max_df: 0.95
+        lowercase: true
+        strip_accents: unicode
+
+      char:
+        analyzer: char_wb
+        max_features: 30000
+        ngram_range: [3, 5]
+        min_df: 2
+        max_df: 0.95
+        lowercase: true
+
+inference:
+  model_path: models/baseline/best_model.joblib
+  threshold_path: models/baseline/decision_threshold.json
+  batch_output_dir: outputs/predictions
+  max_text_length: 1000
+  max_batch_size: 1000
+
+api:
+  title: Twitter Sentiment Analysis API
+  version: 1.0.0
+  description: Production API for binary Twitter sentiment classification.
+  host: 127.0.0.1
+  port: 8000
+
+deployment:
+  app_env: production
+  api_host: 0.0.0.0
+  api_port: 8000
+  log_level: INFO
+  model_required: true
+  threshold_required: false
+
+observability:
+  enable_request_logging: true
+  enable_prediction_logging: true
+  prediction_log_path: outputs/logs/predictions.log
+
+repository:
+  include_raw_data: false
+  include_trained_model: true
+  sample_input_path: data/sample_input.csv
