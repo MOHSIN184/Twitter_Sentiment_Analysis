@@ -1,0 +1,21 @@
+{
+  "total_rows": 179995,
+  "total_columns": 2,
+  "column_names": [
+    "sentiment",
+    "text"
+  ],
+  "missing_values": {
+    "sentiment": 0,
+    "text": 0
+  },
+  "label_distribution": {
+    "0": 75870,
+    "1": 104125
+  },
+  "duplicate_exact_rows": 1214,
+  "empty_text_rows": 0,
+  "average_text_length": 77.66333509264146,
+  "median_text_length": 74.0,
+  "max_text_length": 359
+}

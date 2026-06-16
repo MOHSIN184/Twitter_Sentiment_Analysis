@@ -1,0 +1,17 @@
+{
+  "train_rows": 138772,
+  "validation_rows": 17346,
+  "test_rows": 17347,
+  "train_label_distribution": {
+    "0": 59041,
+    "1": 79731
+  },
+  "validation_label_distribution": {
+    "0": 7380,
+    "1": 9966
+  },
+  "test_label_distribution": {
+    "0": 7380,
+    "1": 9967
+  }
+}
