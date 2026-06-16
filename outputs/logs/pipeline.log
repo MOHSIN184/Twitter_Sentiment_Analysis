@@ -1,0 +1,282 @@
+2026-06-16 12:31:10 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\raw\twitter_sentiment_dataset.csv with 179995 rows and columns: ['sentiment', 'text']
+2026-06-16 12:31:23 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\raw\twitter_sentiment_dataset.csv with 179995 rows and columns: ['sentiment', 'text']
+2026-06-16 12:31:25 | INFO | sentiment_pipeline | Saved dataset analysis reports to D:\twitter-sentiment-processing\data\reports
+2026-06-16 12:31:27 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\raw\twitter_sentiment_dataset.csv with 179995 rows and columns: ['sentiment', 'text']
+2026-06-16 12:31:36 | INFO | sentiment_pipeline | Saved cleaned dataset to D:\twitter-sentiment-processing\data\processed\twitter_sentiment_clean.csv
+2026-06-16 12:31:48 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\twitter_sentiment_clean.csv with 178253 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:32:39 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\raw\twitter_sentiment_dataset.csv with 179995 rows and columns: ['sentiment', 'text']
+2026-06-16 12:32:40 | INFO | sentiment_pipeline | Saved dataset analysis reports to D:\twitter-sentiment-processing\data\reports
+2026-06-16 12:32:42 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\raw\twitter_sentiment_dataset.csv with 179995 rows and columns: ['sentiment', 'text']
+2026-06-16 12:32:51 | INFO | sentiment_pipeline | Saved cleaned dataset to D:\twitter-sentiment-processing\data\processed\twitter_sentiment_clean.csv
+2026-06-16 12:32:54 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\twitter_sentiment_clean.csv with 173465 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:32:55 | INFO | sentiment_pipeline | Saved train, validation, and test splits to D:\twitter-sentiment-processing\data\processed
+2026-06-16 12:35:45 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\raw\twitter_sentiment_dataset.csv with 179995 rows and columns: ['sentiment', 'text']
+2026-06-16 12:35:46 | INFO | sentiment_pipeline | Saved dataset analysis reports to D:\twitter-sentiment-processing\data\reports
+2026-06-16 12:35:48 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\raw\twitter_sentiment_dataset.csv with 179995 rows and columns: ['sentiment', 'text']
+2026-06-16 12:35:57 | INFO | sentiment_pipeline | Saved cleaned dataset to D:\twitter-sentiment-processing\data\processed\twitter_sentiment_clean.csv
+2026-06-16 12:36:00 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\twitter_sentiment_clean.csv with 173465 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:36:01 | INFO | sentiment_pipeline | Saved train, validation, and test splits to D:\twitter-sentiment-processing\data\processed
+2026-06-16 12:42:08 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\train.csv with 138772 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:42:08 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:42:08 | INFO | sentiment_pipeline | Training baseline model on 138772 rows
+2026-06-16 12:42:18 | INFO | sentiment_pipeline | Evaluating baseline model on 17346 validation rows
+2026-06-16 12:42:21 | INFO | sentiment_pipeline | Saved model to D:\twitter-sentiment-processing\models\baseline\tfidf_logistic_regression.joblib
+2026-06-16 12:42:23 | INFO | sentiment_pipeline | Saved validation metrics to D:\twitter-sentiment-processing\models\baseline\metrics.json
+2026-06-16 12:42:32 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\tfidf_logistic_regression.joblib
+2026-06-16 12:42:32 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\test.csv with 17347 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:42:34 | INFO | sentiment_pipeline | Saved test metrics to D:\twitter-sentiment-processing\data\reports\test_metrics.json
+2026-06-16 12:51:45 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\train.csv with 138772 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:51:45 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:51:45 | INFO | sentiment_pipeline | Training baseline model on 138772 rows
+2026-06-16 12:51:54 | INFO | sentiment_pipeline | Evaluating baseline model on 17346 validation rows
+2026-06-16 12:51:57 | INFO | sentiment_pipeline | Saved model to D:\twitter-sentiment-processing\models\baseline\tfidf_logistic_regression.joblib
+2026-06-16 12:51:58 | INFO | sentiment_pipeline | Saved validation metrics to D:\twitter-sentiment-processing\models\baseline\metrics.json
+2026-06-16 12:52:03 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\tfidf_logistic_regression.joblib
+2026-06-16 12:52:03 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\test.csv with 17347 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:52:05 | INFO | sentiment_pipeline | Saved test metrics to D:\twitter-sentiment-processing\data\reports\test_metrics.json
+2026-06-16 12:57:14 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\train.csv with 138772 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:57:14 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:57:14 | INFO | sentiment_pipeline | Running experiment: logistic_regression__basic_unigram
+2026-06-16 12:57:14 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 12:57:19 | INFO | sentiment_pipeline | Running experiment: logistic_regression__unigram_bigram
+2026-06-16 12:57:19 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 12:57:30 | INFO | sentiment_pipeline | Running experiment: logistic_regression__char_word_hybrid
+2026-06-16 12:57:30 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 12:57:41 | INFO | sentiment_pipeline | Running experiment: linear_svc__basic_unigram
+2026-06-16 12:57:41 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 12:57:49 | INFO | sentiment_pipeline | Running experiment: linear_svc__unigram_bigram
+2026-06-16 12:57:49 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 12:58:01 | INFO | sentiment_pipeline | Running experiment: linear_svc__char_word_hybrid
+2026-06-16 12:58:01 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 12:58:12 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__basic_unigram
+2026-06-16 12:58:12 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 12:58:16 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__unigram_bigram
+2026-06-16 12:58:16 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 12:58:29 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__char_word_hybrid
+2026-06-16 12:58:29 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 12:58:39 | INFO | sentiment_pipeline | Running experiment: complement_nb__basic_unigram
+2026-06-16 12:58:39 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 12:58:42 | INFO | sentiment_pipeline | Running experiment: complement_nb__unigram_bigram
+2026-06-16 12:58:42 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 12:58:52 | INFO | sentiment_pipeline | Running experiment: complement_nb__char_word_hybrid
+2026-06-16 12:58:52 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 12:59:01 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 12:59:01 | INFO | sentiment_pipeline | Retraining best model logistic_regression with TF-IDF variant char_word_hybrid on train + validation
+2026-06-16 12:59:13 | INFO | sentiment_pipeline | Saved model comparison report to D:\twitter-sentiment-processing\data\reports\experiments\model_comparison.csv
+2026-06-16 12:59:23 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:59:24 | INFO | sentiment_pipeline | Saved validation error analysis to D:\twitter-sentiment-processing\data\reports\error_analysis.csv
+2026-06-16 12:59:33 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\test.csv with 17347 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 12:59:35 | INFO | sentiment_pipeline | Saved final best model test metrics to D:\twitter-sentiment-processing\data\reports\experiments\final_best_model_test_metrics.json
+2026-06-16 13:00:40 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\train.csv with 138772 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:00:40 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:00:40 | INFO | sentiment_pipeline | Running experiment: logistic_regression__basic_unigram
+2026-06-16 13:00:40 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:00:44 | INFO | sentiment_pipeline | Running experiment: logistic_regression__unigram_bigram
+2026-06-16 13:00:44 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:00:53 | INFO | sentiment_pipeline | Running experiment: logistic_regression__char_word_hybrid
+2026-06-16 13:00:53 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:01:04 | INFO | sentiment_pipeline | Running experiment: linear_svc__basic_unigram
+2026-06-16 13:01:04 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:01:09 | INFO | sentiment_pipeline | Running experiment: linear_svc__unigram_bigram
+2026-06-16 13:01:09 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:01:20 | INFO | sentiment_pipeline | Running experiment: linear_svc__char_word_hybrid
+2026-06-16 13:01:20 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:01:30 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__basic_unigram
+2026-06-16 13:01:30 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:01:33 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__unigram_bigram
+2026-06-16 13:01:33 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:01:42 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__char_word_hybrid
+2026-06-16 13:01:42 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:01:49 | INFO | sentiment_pipeline | Running experiment: complement_nb__basic_unigram
+2026-06-16 13:01:49 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:01:52 | INFO | sentiment_pipeline | Running experiment: complement_nb__unigram_bigram
+2026-06-16 13:01:52 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:02:00 | INFO | sentiment_pipeline | Running experiment: complement_nb__char_word_hybrid
+2026-06-16 13:02:00 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:02:08 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:02:08 | INFO | sentiment_pipeline | Retraining best model logistic_regression with TF-IDF variant char_word_hybrid on train + validation
+2026-06-16 13:02:20 | INFO | sentiment_pipeline | Saved model comparison report to D:\twitter-sentiment-processing\data\reports\experiments\model_comparison.csv
+2026-06-16 13:02:23 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:02:24 | INFO | sentiment_pipeline | Saved validation error analysis to D:\twitter-sentiment-processing\data\reports\error_analysis.csv
+2026-06-16 13:02:28 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\test.csv with 17347 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:02:30 | INFO | sentiment_pipeline | Saved final best model test metrics to D:\twitter-sentiment-processing\data\reports\experiments\final_best_model_test_metrics.json
+2026-06-16 13:11:47 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\train.csv with 138772 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:11:47 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:11:47 | INFO | sentiment_pipeline | Running experiment: logistic_regression__basic_unigram
+2026-06-16 13:11:47 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:11:51 | INFO | sentiment_pipeline | Running experiment: logistic_regression__unigram_bigram
+2026-06-16 13:11:51 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:12:03 | INFO | sentiment_pipeline | Running experiment: logistic_regression__real_word_char_hybrid
+2026-06-16 13:12:03 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:12:46 | INFO | sentiment_pipeline | Running experiment: linear_svc__basic_unigram
+2026-06-16 13:12:46 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:12:52 | INFO | sentiment_pipeline | Running experiment: linear_svc__unigram_bigram
+2026-06-16 13:12:52 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:13:08 | INFO | sentiment_pipeline | Running experiment: linear_svc__real_word_char_hybrid
+2026-06-16 13:13:08 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:14:14 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__basic_unigram
+2026-06-16 13:14:14 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:14:18 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__unigram_bigram
+2026-06-16 13:14:18 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:14:27 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__real_word_char_hybrid
+2026-06-16 13:14:27 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:15:00 | INFO | sentiment_pipeline | Running experiment: complement_nb__basic_unigram
+2026-06-16 13:15:00 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:15:04 | INFO | sentiment_pipeline | Running experiment: complement_nb__unigram_bigram
+2026-06-16 13:15:04 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:15:12 | INFO | sentiment_pipeline | Running experiment: complement_nb__real_word_char_hybrid
+2026-06-16 13:15:12 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:15:47 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:15:47 | INFO | sentiment_pipeline | Retraining best model logistic_regression with TF-IDF variant real_word_char_hybrid on train + validation
+2026-06-16 13:16:38 | INFO | sentiment_pipeline | Saved model comparison report to D:\twitter-sentiment-processing\data\reports\experiments\model_comparison.csv
+2026-06-16 13:16:53 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:16:53 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:16:58 | INFO | sentiment_pipeline | Saved threshold tuning results to D:\twitter-sentiment-processing\data\reports\experiments\threshold_tuning.csv
+2026-06-16 13:17:01 | INFO | sentiment_pipeline | Saved validation error analysis to D:\twitter-sentiment-processing\data\reports\error_analysis.csv
+2026-06-16 13:17:49 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\train.csv with 138772 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:17:49 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:17:49 | INFO | sentiment_pipeline | Running experiment: logistic_regression__basic_unigram
+2026-06-16 13:17:49 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:17:54 | INFO | sentiment_pipeline | Running experiment: logistic_regression__unigram_bigram
+2026-06-16 13:17:54 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:18:04 | INFO | sentiment_pipeline | Running experiment: logistic_regression__real_word_char_hybrid
+2026-06-16 13:18:04 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:18:49 | INFO | sentiment_pipeline | Running experiment: linear_svc__basic_unigram
+2026-06-16 13:18:49 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:18:55 | INFO | sentiment_pipeline | Running experiment: linear_svc__unigram_bigram
+2026-06-16 13:18:55 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:19:06 | INFO | sentiment_pipeline | Running experiment: linear_svc__real_word_char_hybrid
+2026-06-16 13:19:06 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:20:00 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__basic_unigram
+2026-06-16 13:20:00 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:20:04 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__unigram_bigram
+2026-06-16 13:20:04 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:20:13 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__real_word_char_hybrid
+2026-06-16 13:20:13 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:20:50 | INFO | sentiment_pipeline | Running experiment: complement_nb__basic_unigram
+2026-06-16 13:20:50 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:20:53 | INFO | sentiment_pipeline | Running experiment: complement_nb__unigram_bigram
+2026-06-16 13:20:53 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:21:01 | INFO | sentiment_pipeline | Running experiment: complement_nb__real_word_char_hybrid
+2026-06-16 13:21:01 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:21:38 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:21:38 | INFO | sentiment_pipeline | Training best model logistic_regression with TF-IDF variant real_word_char_hybrid on train only
+2026-06-16 13:22:27 | INFO | sentiment_pipeline | Saved model comparison report to D:\twitter-sentiment-processing\data\reports\experiments\model_comparison.csv
+2026-06-16 13:22:41 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:22:41 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:22:46 | INFO | sentiment_pipeline | Saved threshold tuning results to D:\twitter-sentiment-processing\data\reports\experiments\threshold_tuning.csv
+2026-06-16 13:22:49 | INFO | sentiment_pipeline | Saved validation error analysis to D:\twitter-sentiment-processing\data\reports\error_analysis.csv
+2026-06-16 13:23:00 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\test.csv with 17347 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:23:04 | INFO | sentiment_pipeline | Saved final best model test metrics to D:\twitter-sentiment-processing\data\reports\experiments\final_best_model_test_metrics.json
+2026-06-16 13:24:37 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\train.csv with 138772 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:24:37 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:24:37 | INFO | sentiment_pipeline | Running experiment: logistic_regression__basic_unigram
+2026-06-16 13:24:37 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:24:41 | INFO | sentiment_pipeline | Running experiment: logistic_regression__unigram_bigram
+2026-06-16 13:24:41 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:24:51 | INFO | sentiment_pipeline | Running experiment: logistic_regression__real_word_char_hybrid
+2026-06-16 13:24:51 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:25:36 | INFO | sentiment_pipeline | Running experiment: linear_svc__basic_unigram
+2026-06-16 13:25:36 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:25:43 | INFO | sentiment_pipeline | Running experiment: linear_svc__unigram_bigram
+2026-06-16 13:25:43 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:25:54 | INFO | sentiment_pipeline | Running experiment: linear_svc__real_word_char_hybrid
+2026-06-16 13:25:54 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:26:46 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__basic_unigram
+2026-06-16 13:26:46 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:26:49 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__unigram_bigram
+2026-06-16 13:26:49 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:26:59 | INFO | sentiment_pipeline | Running experiment: sgd_classifier__real_word_char_hybrid
+2026-06-16 13:26:59 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:27:35 | INFO | sentiment_pipeline | Running experiment: complement_nb__basic_unigram
+2026-06-16 13:27:35 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:27:38 | INFO | sentiment_pipeline | Running experiment: complement_nb__unigram_bigram
+2026-06-16 13:27:38 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:27:47 | INFO | sentiment_pipeline | Running experiment: complement_nb__real_word_char_hybrid
+2026-06-16 13:27:47 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:28:20 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:28:20 | INFO | sentiment_pipeline | Training best model logistic_regression with TF-IDF variant real_word_char_hybrid on train only
+2026-06-16 13:29:01 | INFO | sentiment_pipeline | Saved model comparison report to D:\twitter-sentiment-processing\data\reports\experiments\model_comparison.csv
+2026-06-16 13:29:05 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\validation.csv with 17346 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:29:09 | INFO | sentiment_pipeline | Saved threshold tuning results to D:\twitter-sentiment-processing\data\reports\experiments\threshold_tuning.csv
+2026-06-16 13:29:13 | INFO | sentiment_pipeline | Loaded dataset from D:\twitter-sentiment-processing\data\processed\test.csv with 17347 rows and columns: ['sentiment', 'text', 'clean_text']
+2026-06-16 13:29:16 | INFO | sentiment_pipeline | Saved final best model test metrics to D:\twitter-sentiment-processing\data\reports\experiments\final_best_model_test_metrics.json
+2026-06-16 13:37:20 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:37:20 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:37:34 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:37:34 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:37:34 | INFO | sentiment_pipeline | Saved API CSV predictions to D:\twitter-sentiment-processing\outputs\predictions\api_predictions_20260616_133734.csv
+2026-06-16 13:37:34 | ERROR | sentiment_pipeline | CSV prediction failed
+Traceback (most recent call last):
+  File "D:\twitter-sentiment-processing\src\sentiment_pipeline\api\app.py", line 176, in predict_csv_upload
+    predictions = [PredictionResponse(**row) for row in predictions_df.to_dict(orient="records")]
+  File "D:\twitter-sentiment-processing\src\sentiment_pipeline\api\app.py", line 176, in <listcomp>
+    predictions = [PredictionResponse(**row) for row in predictions_df.to_dict(orient="records")]
+  File "C:\Users\Mohsin\AppData\Local\Programs\Python\Python39\lib\site-packages\pydantic\main.py", line 263, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for PredictionResponse
+original_text
+  Field required [type=missing, input_value={'text': 'I love this pro...ty': 0.9390692207141811}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.13/v/missing
+2026-06-16 13:37:52 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:37:52 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:37:52 | INFO | sentiment_pipeline | Saved API CSV predictions to D:\twitter-sentiment-processing\outputs\predictions\api_predictions_20260616_133752.csv
+2026-06-16 13:42:35 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:42:35 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:56:56 | INFO | sentiment_pipeline | request method=GET path=/ status_code=200 duration_ms=25.90 request_id=2ebbde74-3a3b-4156-b8ad-df4912301a11
+2026-06-16 13:56:56 | INFO | sentiment_pipeline | request method=GET path=/health status_code=200 duration_ms=7.26 request_id=f20c5f1c-c968-4b35-9aa6-a29c58395178
+2026-06-16 13:56:56 | INFO | sentiment_pipeline | request method=GET path=/model-info status_code=200 duration_ms=10.09 request_id=b2bdf92b-cfa1-4fdc-b96a-52c73781c8fe
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | request method=GET path=/ready status_code=200 duration_ms=2314.28 request_id=43ca4297-7d76-4c06-9ada-c0bfb7487fe9
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:56:59 | INFO | sentiment_pipeline | Building classifier: not_a_model
+2026-06-16 13:58:07 | INFO | sentiment_pipeline | request method=GET path=/ status_code=200 duration_ms=13.23 request_id=203211a0-f260-4bed-8f26-1f9762e19b0b
+2026-06-16 13:58:07 | INFO | sentiment_pipeline | request method=GET path=/health status_code=200 duration_ms=4.99 request_id=3dfe439a-0744-4081-9854-5d37d0b9f743
+2026-06-16 13:58:07 | INFO | sentiment_pipeline | request method=GET path=/model-info status_code=200 duration_ms=6.73 request_id=7e2d0241-51a3-476a-9114-087f3a5b3e57
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | request method=GET path=/ready status_code=200 duration_ms=1607.24 request_id=ab00002b-b7fc-41e2-9ba4-269ed4304762
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 13:58:09 | INFO | sentiment_pipeline | Building classifier: not_a_model
+2026-06-16 13:58:32 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:58:32 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:58:32 | INFO | sentiment_pipeline | request method=GET path=/ready status_code=200 duration_ms=1690.26 request_id=faaad037-59ce-4997-a7c1-c2338f3f6940
+2026-06-16 13:58:32 | INFO | sentiment_pipeline | request method=POST path=/predict status_code=200 duration_ms=14.54 request_id=d88375f9-c685-4d47-a264-efcb9976346d
+2026-06-16 13:58:32 | INFO | sentiment_pipeline | request method=POST path=/predict-batch status_code=200 duration_ms=18.38 request_id=5ad13436-e007-4782-b1f1-46bce7dc8caa
+2026-06-16 13:58:32 | INFO | sentiment_pipeline | request method=POST path=/predict-csv status_code=400 duration_ms=10.21 request_id=014938ee-3cd2-455d-bc9b-d377f964468b
+2026-06-16 13:58:52 | INFO | sentiment_pipeline | request method=POST path=/predict-csv status_code=400 duration_ms=24.34 request_id=6c061ec2-a09b-46c7-8dc5-0acf2ccc30a0
+2026-06-16 13:59:33 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:59:33 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 13:59:33 | INFO | sentiment_pipeline | Saved API CSV predictions to D:\twitter-sentiment-processing\outputs\predictions\api_predictions_20260616_135933.csv
+2026-06-16 13:59:33 | INFO | sentiment_pipeline | request method=POST path=/predict-csv status_code=200 duration_ms=1797.20 request_id=8f1d63da-f6bf-4a1a-ba1a-5ec8585f6972
+2026-06-16 14:00:19 | INFO | sentiment_pipeline | request method=GET path=/ status_code=200 duration_ms=13.01 request_id=ecd3d947-a329-4140-b4bd-44096eaaa402
+2026-06-16 14:00:19 | INFO | sentiment_pipeline | request method=GET path=/health status_code=200 duration_ms=5.02 request_id=d0cd7261-eebf-45a6-9fab-1f4b79044c45
+2026-06-16 14:00:19 | INFO | sentiment_pipeline | request method=GET path=/model-info status_code=200 duration_ms=6.57 request_id=3d3c2d69-b685-4e48-aec9-6d6e98efe5d3
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | request method=GET path=/ready status_code=200 duration_ms=1601.20 request_id=b9f29932-c503-4429-81f8-0effe68de4e1
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 14:00:20 | INFO | sentiment_pipeline | Building classifier: not_a_model
+2026-06-16 14:02:13 | INFO | sentiment_pipeline | request method=GET path=/ status_code=200 duration_ms=7.65 request_id=fa06f9f2-bad6-4460-99aa-77fc5cf03c03
+2026-06-16 14:02:13 | INFO | sentiment_pipeline | request method=GET path=/health status_code=200 duration_ms=3.11 request_id=99cd3020-8905-4e34-999e-8fb7a286d465
+2026-06-16 14:02:13 | INFO | sentiment_pipeline | request method=GET path=/model-info status_code=200 duration_ms=7.56 request_id=b5f75e03-7f11-4ba2-87e9-59c9f4458e74
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | request method=GET path=/ready status_code=200 duration_ms=1134.52 request_id=3473e290-93b0-4250-9153-ca2a08fef25f
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | Building classifier: logistic_regression
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | Building classifier: linear_svc
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | Building classifier: sgd_classifier
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | Building classifier: complement_nb
+2026-06-16 14:02:14 | INFO | sentiment_pipeline | Building classifier: not_a_model
+2026-06-16 14:02:32 | INFO | sentiment_pipeline | Loaded model from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
+2026-06-16 14:02:32 | INFO | sentiment_pipeline | Loaded API predictor from D:\twitter-sentiment-processing\models\baseline\best_model.joblib
