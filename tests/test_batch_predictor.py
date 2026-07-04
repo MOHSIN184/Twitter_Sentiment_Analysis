@@ -9,7 +9,7 @@ SRC_PATH = PROJECT_ROOT / "src"
 if str(SRC_PATH) not in sys.path:
     sys.path.insert(0, str(SRC_PATH))
 
-from sentiment_pipeline.batch_predictor import PREDICTION_COLUMNS, predict_dataframe  # noqa: E402
+from sentiment_pipeline.batch_predictor import PREDICTION_COLUMNS, predict_dataframe, predict_xquik_export  # noqa: E402
 
 
 class FakePredictor:
@@ -43,3 +43,22 @@ def test_output_dataframe_contains_required_prediction_columns() -> None:
     df = pd.DataFrame({"text": ["I love this"]})
     predictions = predict_dataframe(df, FakePredictor())
     assert predictions.columns.tolist() == PREDICTION_COLUMNS
+
+
+def test_predict_dataframe_can_keep_source_columns() -> None:
+    df = pd.DataFrame({"text": ["I love this"], "tweet_id": ["123"]})
+    predictions = predict_dataframe(df, FakePredictor(), keep_source_columns=True)
+    assert predictions["tweet_id"].tolist() == ["123"]
+    assert predictions.columns.tolist() == ["tweet_id", *PREDICTION_COLUMNS]
+
+
+def test_predict_xquik_export_preserves_metadata(tmp_path: Path) -> None:
+    input_path = tmp_path / "xquik.json"
+    output_path = tmp_path / "predictions.csv"
+    input_path.write_text('{"data":[{"text":"I love this","tweet_id":"123","username":"demo"}]}', encoding="utf-8")
+
+    predictions = predict_xquik_export(input_path, output_path, FakePredictor())
+
+    assert output_path.exists()
+    assert predictions["tweet_id"].tolist() == ["123"]
+    assert predictions["user"].tolist() == ["demo"]
