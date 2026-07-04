@@ -127,6 +127,14 @@ python scripts/11_batch_predict_csv.py --input data/sample_input.csv --output ou
 
 The input CSV must contain a `text` column.
 
+To run the same sentiment predictor on an exported Xquik (`https://xquik.com`) dataset:
+
+```bash
+python scripts/11_batch_predict_csv.py --input data/xquik-export.json --output outputs/predictions/xquik_predictions.csv --xquik-export
+```
+
+The Xquik input can be JSON, JSONL, or CSV. The batch output keeps source metadata columns such as `tweet_id`, `user`, counts, timestamps, and URLs when they are present.
+
 ## 11. Docker Usage
 
 Build the image:
